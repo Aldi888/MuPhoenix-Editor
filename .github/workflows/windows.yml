@@ -1,0 +1,19 @@
+name: Windows build and tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Build and synthetic tests
+        shell: powershell
+        run: .\scripts\Build.ps1 -Test
