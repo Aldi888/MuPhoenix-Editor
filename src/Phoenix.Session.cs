@@ -1,7 +1,7 @@
 using System;using System.IO;using System.Text;using System.Linq;using System.Security.Cryptography;using System.Web.Script.Serialization;using System.Collections.Generic;
 [assembly:System.Reflection.AssemblyTitle("MU Editor Phoenix")]
 [assembly:System.Reflection.AssemblyProduct("MU Editor Phoenix")]
-[assembly:System.Reflection.AssemblyVersion("1.2.0.0")]
+[assembly:System.Reflection.AssemblyVersion("1.2.1.0")]
 namespace MuEditorPhoenix {
  public class SessionSettings {
   public string Server="",Client="",ItemFile="",ImageFolder="",SqlHost="",SqlDatabase="",SqlUser="",PasswordCipher="",Language="pt",Account="",Character="",Search="";

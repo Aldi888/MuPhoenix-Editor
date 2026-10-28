@@ -62,7 +62,7 @@ Gravações usam conta offline, transação serializável, conferência contra o
 .\scripts\Build.ps1 -Test
 # Integração SQL opcional: cria e remove uma base temporária própria.
 .\scripts\Test-Database.ps1 -Server localhost
-.\scripts\Package.ps1 -Version 1.2.0
+.\scripts\Package.ps1 -Version 1.2.1
 ```
 
 Usa o compilador do .NET Framework do Windows, sem pacotes externos. Os testes padrão são sintéticos. A integração SQL usa somente uma base isolada com registros artificiais; não executa premiação em banco do jogo. Veja docs/FORMAT-MUDEVS25.md.

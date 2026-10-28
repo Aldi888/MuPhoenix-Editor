@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.1
+
+- Ações de adicionar/salvar premiações sempre visíveis no topo.
+- Checksums usam o mesmo nome do executável baixado pelo GitHub.
+
 ## 1.2.0
 
 - Nome MU Editor Phoenix; título Mu Editor Community Edition.
