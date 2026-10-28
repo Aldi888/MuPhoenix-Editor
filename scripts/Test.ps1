@@ -4,7 +4,7 @@ $root=Split-Path $PSScriptRoot
 $exe=Join-Path $root 'dist\MU Editor Phoenix.exe'
 $reports=Join-Path $root 'tests\reports'
 New-Item -ItemType Directory -Force -Path $reports | Out-Null
-foreach($test in @(@('--self-test','regression.json'),@('--v2-self-test','workspace.json'),@('--grant-self-test','grants.json'))){
+foreach($test in @(@('--self-test','regression.json'),@('--v2-self-test','workspace.json'),@('--grant-self-test','grants.json'),@('--cash-self-test','cash.json'))){
  $report=Join-Path $reports $test[1]
  $arguments=$test[0]+' "'+$report+'"'
  $process=Start-Process -FilePath $exe -ArgumentList $arguments -Wait -PassThru

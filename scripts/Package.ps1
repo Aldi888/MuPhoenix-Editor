@@ -1,4 +1,4 @@
-﻿param([string]$Version='1.2.1')
+﻿param([string]$Version='1.3.0')
 $ErrorActionPreference='Stop'
 $root=Split-Path $PSScriptRoot
 $exe=Join-Path $root 'dist\MU Editor Phoenix.exe'

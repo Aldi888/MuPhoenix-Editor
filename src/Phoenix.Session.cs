@@ -1,7 +1,7 @@
-using System;using System.IO;using System.Text;using System.Linq;using System.Security.Cryptography;using System.Web.Script.Serialization;using System.Collections.Generic;
+﻿using System;using System.IO;using System.Text;using System.Linq;using System.Security.Cryptography;using System.Web.Script.Serialization;using System.Collections.Generic;
 [assembly:System.Reflection.AssemblyTitle("MU Editor Phoenix")]
 [assembly:System.Reflection.AssemblyProduct("MU Editor Phoenix")]
-[assembly:System.Reflection.AssemblyVersion("1.2.1.0")]
+[assembly:System.Reflection.AssemblyVersion("1.3.0.0")]
 namespace MuEditorPhoenix {
  public class SessionSettings {
   public string Server="",Client="",ItemFile="",ImageFolder="",SqlHost="",SqlDatabase="",SqlUser="",PasswordCipher="",Language="pt",Account="",Character="",Search="";
@@ -15,6 +15,7 @@ namespace MuEditorPhoenix {
  public static class Words {
   public static string Language="pt";
   static Dictionary<string,string[]> map=new Dictionary<string,string[]>{
+   {"Aplicar no projeto",new[]{"Apply to project","Aplicar al proyecto"}},{"Como editar / destinos",new[]{"Editing guide / targets","Guía / destinos"}},
    {"Adicionar no personagem",new[]{"Add to character","Añadir al personaje"}},{"Adicionar no baú",new[]{"Add to warehouse","Añadir al baúl"}},{"Cancelar item novo",new[]{"Cancel new item","Cancelar objeto nuevo"}},{"Criar premiação",new[]{"Create reward","Crear premio"}},{"Adicionar",new[]{"Add","Añadir"}},{"Cópias",new[]{"Copies","Copias"}},{"Prêmio permanente. A conta deve estar offline para salvar.",new[]{"Permanent reward. The account must be offline to save.","Premio permanente. La cuenta debe estar desconectada para guardar."}},{"Premiação preparada. Clique em Salvar para entregar.",new[]{"Reward prepared. Click Save to deliver.","Premio preparado. Pulse Guardar para entregar."}},
 
    {"Projeto",new[]{"Project","Proyecto"}},{"Catálogo de itens",new[]{"Item catalog","Catálogo de objetos"}},{"Lojas NPC",new[]{"NPC shops","Tiendas NPC"}},{"Contas e personagens",new[]{"Accounts & characters","Cuentas y personajes"}},{"Inventário e baú",new[]{"Inventory & warehouse","Inventario y baúl"}},{"Conexão e preferências",new[]{"Connection & preferences","Conexión y preferencias"}},{"Ajuda / licença",new[]{"Help / license","Ayuda / licencia"}},

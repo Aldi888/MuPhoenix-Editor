@@ -1,3 +1,9 @@
+﻿# 1.3.0
+
+- Cash Shop mostra nomes de itens/ofertas, seção/índice e duração, sem modificar o formato nativo.
+- Guia na tela e mapa dos destinos na exportação.
+- Aplicação local revisada com backup, conferência de originais e reversão em falha; sem reload/publicação automática.
+
 # Changelog
 
 ## 1.2.1

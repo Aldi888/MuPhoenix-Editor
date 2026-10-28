@@ -1,4 +1,4 @@
-# MU Editor Phoenix
+﻿# MU Editor Phoenix
 
 **Mu Editor Community Edition** — editor comunitário para Windows, com fontes sob licença MIT.
 
@@ -36,6 +36,10 @@ Os novos prêmios desta versão são permanentes, com opções básicas. Itens d
 - Cash Shop: IBSCategory, IBSPackage, IBSProduct, CashShopPackage e CashShopProduct; diagnóstico de vínculos, edição e exportação Client/Server.
 - Interface principal em Português, English e Español. Nomes dos itens vêm do catálogo e não são traduzidos pelo editor.
 
+## Cash Shop: editar e aplicar
+
+Veja [o guia](docs/CASH-SHOP.md). A tela mostra nomes de Item.xml, ofertas de IBSProduct, seção/índice e duração sem acrescentar campos aos arquivos nativos. **Como editar / destinos** explica os cinco arquivos. **Exportar cinco arquivos** cria uma saída separada. **Aplicar no projeto** confere os originais, faz backup e grava nos destinos importados do projeto escolhido; não recarrega nem publica na web.
+
 ## Persistência e atualização
 
 Projeto, conexão, idioma, busca, conta/personagem, página e tamanho da janela são salvos automaticamente. Reconectar ao abrir pode ser desativado. Para login SQL, Lembrar senha neste Windows usa DPAPI do usuário atual; não salva senha em texto aberto. Em outro computador/usuário Windows, informe a senha novamente.
@@ -62,7 +66,7 @@ Gravações usam conta offline, transação serializável, conferência contra o
 .\scripts\Build.ps1 -Test
 # Integração SQL opcional: cria e remove uma base temporária própria.
 .\scripts\Test-Database.ps1 -Server localhost
-.\scripts\Package.ps1 -Version 1.2.1
+.\scripts\Package.ps1 -Version 1.3.0
 ```
 
 Usa o compilador do .NET Framework do Windows, sem pacotes externos. Os testes padrão são sintéticos. A integração SQL usa somente uma base isolada com registros artificiais; não executa premiação em banco do jogo. Veja docs/FORMAT-MUDEVS25.md.
